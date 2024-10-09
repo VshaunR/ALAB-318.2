@@ -1,0 +1,84 @@
+body{
+ font-family: sans-serif;
+ font-size: 1.2rem;
+ margin: 0;
+ padding: 0;
+
+}
+
+.hero{
+  width: 300px;
+}
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer";
+}
+.header{
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(rgb(94, 6, 6) ,rgb(151, 146, 135));
+  height: 20vh;
+}
+.menu{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+  font-size: 1.5rem;
+ color: black;
+}
+.main{
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+.footer{
+  grid-area: footer;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 1rem;
+}
+.gallery-pic{
+  width: 300px;
+
+}
+
+.form-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 1rem;
+}
+.login-form>input{
+  width:150%;
+  padding: 1rem;
+  align-items: center;
+}
+.log{
+  color: green;
+  background-color: rgb(108, 214, 108);
+  margin-left: 18px;
+}
